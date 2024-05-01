@@ -8,15 +8,14 @@ import sys
 
 DEFAULT_FILENAME = "words.txt"
 DEFAULT_DUPLICATES = False
-
-
+#lista ordenada
 def sort_list(items, ascending=True):
     if not isinstance(items, list):
         raise RuntimeError(f"No puede ordenar {type(items)}")
 
     return sorted(items, reverse=(not ascending))
 
-
+#borrar_duplicados
 def remove_duplicates_from_list(items):
     return list(set(items))
 
